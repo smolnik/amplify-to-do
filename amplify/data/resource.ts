@@ -4,6 +4,7 @@ const schema = a.schema({
   Todo: a
     .model({
       date: a.date(),
+      title: a.string(),
       content: a.string(),
       isDone: a.boolean().default(false),
     })

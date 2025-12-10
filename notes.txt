@@ -1,0 +1,6 @@
+git commit -am "Add a title field"
+git push
+
+npx @aws-amplify/backend-cli generate graphql-client-code --format modelgen --model-target java --out app/src/main/java --app-id d16jvmbm9yhyun --branch main --profile amplify
+
+npx @aws-amplify/backend-cli generate outputs --out-dir app/src/main/res/raw --app-id d16jvmbm9yhyun --branch main --profile amplify
